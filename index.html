@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="Ananya Blog Studio - a full-stack blog management system."
+  />
+
+  <title>Ananya Blog Studio | Full-Stack Blog</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="landing-page">
+
+  <header class="site-header container">
+
+    <a class="brand" href="/">
+      <span class="brand-mark">A</span>
+
+      <span>
+        <strong>Ananya Blog Studio</strong>
+        <small>Built by Ananya Das</small>
+      </span>
+    </a>
+
+    <a class="nav-button" href="#auth">
+      Start Writing
+    </a>
+
+  </header>
+
+  <main>
+
+    <section class="hero container">
+
+      <div class="hero-copy">
+
+        <span class="eyebrow">
+          FULL-STACK BLOG MANAGEMENT
+        </span>
+
+        <h1>
+          Write ideas that deserve to be
+          <span>remembered.</span>
+        </h1>
+
+        <p>
+          A clean, responsive blog workspace with
+          secure login, MongoDB storage, and simple
+          CRUD tools—designed and developed by
+          Ananya Das.
+        </p>
+
+        <div class="hero-actions">
+
+          <a
+            class="primary-button"
+            href="#auth"
+          >
+            Create your account
+          </a>
+
+          <a
+            class="text-link"
+            href="#recent-posts"
+          >
+            Explore posts →
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="hero-card">
+
+  <div class="card-topline">
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <b>ANANYA BLOG STUDIO</b>
+  </div>
+
+  <div class="mock-editor">
+
+    <span class="code-line muted">
+      ANANYA DAS
+    </span>
+
+    <span class="code-line">
+      Write.
+      <em>Publish.</em>
+      Grow.
+    </span>
+
+    <span class="code-line">
+      Your ideas,
+      <em>your space.</em>
+    </span>
+
+    <span class="code-line">
+      Simple tools.
+      <strong>Real stories.</strong>
+    </span>
+
+    <div class="publish-chip">
+      ● Personal writing workspace
+    </div>
+
+  </div>
+
+</div>
+    </section>
+
+    <section class="feature-strip container">
+
+      <article>
+        <span>01</span>
+
+        <h3>Secure Access</h3>
+
+        <p>
+          Register and log in with hashed
+          passwords and protected sessions.
+        </p>
+      </article>
+
+      <article>
+        <span>02</span>
+
+        <h3>Easy CRUD</h3>
+
+        <p>
+          Create, edit and delete your own
+          posts from one clean dashboard.
+        </p>
+      </article>
+
+      <article>
+        <span>03</span>
+
+        <h3>Persistent Data</h3>
+
+        <p>
+          Your posts stay in MongoDB instead
+          of disappearing on refresh.
+        </p>
+      </article>
+
+    </section>
+
+    <section
+      id="recent-posts"
+      class="section container"
+    >
+
+      <div class="section-heading">
+
+        <div>
+          <span class="eyebrow">
+            COMMUNITY PREVIEW
+          </span>
+
+          <h2>
+            Recent posts
+          </h2>
+        </div>
+
+        <span class="section-note">
+          Powered by Express + MongoDB
+        </span>
+
+      </div>
+
+      <div
+        id="recent-post-list"
+        class="public-post-grid"
+      >
+        <div class="empty-card">
+          Loading recent posts…
+        </div>
+      </div>
+
+    </section>
+
+    <section
+      id="auth"
+      class="auth-section container"
+    >
+
+      <div class="auth-intro">
+
+        <span class="eyebrow">
+          YOUR WRITING DESK
+        </span>
+
+        <h2>
+          Turn a thought into a post.
+        </h2>
+
+        <p>
+          Log in to manage your posts or create
+          a new Ananya Blog Studio account.
+        </p>
+
+      </div>
+
+      <div class="auth-card">
+
+        <div class="auth-tabs">
+
+          <button
+            class="tab active"
+            data-mode="login"
+          >
+            Login
+          </button>
+
+          <button
+            class="tab"
+            data-mode="register"
+          >
+            Register
+          </button>
+
+        </div>
+
+        <form id="auth-form">
+
+          <div
+            id="name-field"
+            class="field hidden"
+          >
+
+            <label for="name">
+              Your name
+            </label>
+
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Ananya Das"
+              maxlength="60"
+            />
+
+          </div>
+
+          <div class="field">
+
+            <label for="email">
+              Email
+            </label>
+
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+              required
+            />
+
+          </div>
+
+          <div class="field">
+
+            <label for="password">
+              Password
+            </label>
+
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="At least 6 characters"
+              minlength="6"
+              required
+            />
+
+          </div>
+
+          <button
+            id="auth-submit"
+            class="primary-button full"
+            type="submit"
+          >
+            Log in
+          </button>
+
+          <p
+            id="auth-message"
+            class="form-message"
+          ></p>
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+
+    <div class="container footer-inner">
+
+      <p>
+        © 2026 Ananya Das · Ananya Blog Studio
+      </p>
+
+      <p>
+        Built for the Cognetix Technology
+        Full Stack Developer Internship.
+      </p>
+
+    </div>
+
+  </footer>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

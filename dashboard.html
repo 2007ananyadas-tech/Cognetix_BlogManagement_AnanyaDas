@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="Ananya Blog Studio dashboard."
+  />
+
+  <title>
+    Dashboard | Ananya Blog Studio
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  />
+
+</head>
+
+<body class="dashboard-page">
+
+  <header class="site-header container">
+
+    <a
+      class="brand"
+      href="/"
+    >
+
+      <span class="brand-mark">
+        A
+      </span>
+
+      <span>
+        <strong>
+          Ananya Blog Studio
+        </strong>
+
+        <small>
+          Writer dashboard
+        </small>
+      </span>
+
+    </a>
+
+    <div class="dashboard-user">
+
+      <span id="welcome-name">
+        Loading…
+      </span>
+
+      <button
+        id="logout-button"
+        class="ghost-button"
+      >
+        Logout
+      </button>
+
+    </div>
+
+  </header>
+
+  <main class="dashboard container">
+
+    <section class="dashboard-head">
+
+      <div>
+
+        <span class="eyebrow">
+          YOUR WRITING SPACE
+        </span>
+
+        <h1>
+          Welcome back,
+          <span id="dashboard-name">
+            writer
+          </span>.
+        </h1>
+
+        <p>
+          Draft, publish and manage your ideas
+          from one simple workspace.
+        </p>
+
+      </div>
+
+      <div class="stats-card">
+
+        <strong id="post-count">
+          0
+        </strong>
+
+        <span>
+          Your posts
+        </span>
+
+      </div>
+
+    </section>
+
+    <section class="workspace-grid">
+
+      <article class="editor-panel">
+
+        <div class="panel-heading">
+
+          <div>
+
+            <span
+              class="eyebrow"
+              id="form-eyebrow"
+            >
+              NEW STORY
+            </span>
+
+            <h2 id="form-title">
+              Create a post
+            </h2>
+
+          </div>
+
+          <button
+            id="cancel-edit"
+            class="ghost-button hidden"
+          >
+            Cancel edit
+          </button>
+
+        </div>
+
+        <form id="post-form">
+
+          <div class="field">
+
+            <label for="post-title">
+              Title
+            </label>
+
+            <input
+              id="post-title"
+              type="text"
+              maxlength="120"
+              placeholder="Your next idea starts here…"
+              required
+            />
+
+          </div>
+
+          <div class="field">
+
+            <label for="post-category">
+              Category
+            </label>
+
+            <input
+              id="post-category"
+              type="text"
+              maxlength="40"
+              placeholder="Technology"
+            />
+
+          </div>
+
+          <div class="field">
+
+            <label for="post-content">
+              Content
+            </label>
+
+            <textarea
+              id="post-content"
+              rows="9"
+              maxlength="5000"
+              placeholder="Write at least 20 characters…"
+              required
+            ></textarea>
+
+          </div>
+
+          <button
+            id="post-submit"
+            class="primary-button full"
+            type="submit"
+          >
+            Publish post
+          </button>
+
+          <p
+            id="post-message"
+            class="form-message"
+          ></p>
+
+        </form>
+
+      </article>
+
+      <article class="posts-panel">
+
+        <div class="panel-heading">
+
+          <div>
+
+            <span class="eyebrow">
+              CONTENT MANAGER
+            </span>
+
+            <h2>
+              My posts
+            </h2>
+
+          </div>
+
+          <button
+            id="refresh-posts"
+            class="icon-button"
+            title="Refresh posts"
+            aria-label="Refresh posts"
+          >
+            ↻
+          </button>
+
+        </div>
+
+        <div
+          id="my-post-list"
+          class="dashboard-post-list"
+        >
+
+          <div class="empty-card">
+            Loading your posts…
+          </div>
+
+        </div>
+
+      </article>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+
+    <div class="container footer-inner">
+
+      <p>
+        Designed & developed by Ananya Das.
+      </p>
+
+      <p>
+        MongoDB · Express · JavaScript
+      </p>
+
+    </div>
+
+  </footer>
+
+  <script src="dashboard.js"></script>
+
+</body>
+</html>

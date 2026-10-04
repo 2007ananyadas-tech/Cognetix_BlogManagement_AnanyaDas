@@ -1,0 +1,30 @@
+{
+  "name": "cognetix-blog-management-ananya-das",
+  "version": "1.0.0",
+  "description": "A full-stack blog management system built by Ananya Das for the Cognetix Technology Full Stack Developer Internship.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "blog",
+    "crud",
+    "express",
+    "mongodb",
+    "full-stack",
+    "cognetix"
+  ],
+  "author": "Ananya Das",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.2.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^9.10.2"
+  }
+}
